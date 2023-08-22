@@ -8,9 +8,10 @@ from sql import crud, models, schemas
 from sql.base import SessionLocal, engine
 from sqlalchemy.orm import Session
 import logging
+
 # 预先创建数据表
 models.Base.metadata.create_all(bind=engine)
-#日志
+# 日志
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 # 定时任务
@@ -52,6 +53,8 @@ async def verify_token(request: Request, Authorization: str = Header(...)):
 
 
 app = FastAPI(dependencies=[Depends(verify_token)])
+
+
 # app = FastAPI()
 
 

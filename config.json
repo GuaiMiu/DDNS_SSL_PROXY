@@ -1,20 +1,4 @@
 {
-    "ddns": {
-        "d": {
-            "ID": "d",
-            "DOMAIN": "cc.com",
-            "DNS": "腾讯云",
-            "SUB_DOMAIN": "@",
-            "CREATED_TIME": "2023/9/5 11:29:46",
-            "STATUS": ""
-        },
-        "asd": {
-            "ID": "asd",
-            "DOMAIN": "pp.com",
-            "DNS": "腾讯云",
-            "SUB_DOMAIN": "@",
-            "CREATED_TIME": "2023/9/5 11:31:09",
-            "STATUS": ""
-        }
-    }
+    "ddns": {},
+    "ssl": {}
 }
